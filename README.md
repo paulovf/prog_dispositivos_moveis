@@ -1,2 +1,3 @@
-Repositório com os programas da disciplina de programação para Dispositivos Móveis - 2013
+Programação para Dispositivos Móveis - 2013
 ========================
+Repositório com os programas e trabalhos da disciplina de programação para dispositivos móveis
