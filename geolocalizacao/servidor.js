@@ -1,33 +1,27 @@
-// including libraries
 var http = require('http');
-var static = require('node-static');
+var Static = require('node-static');
 var app = http.createServer(handler);
 var io = require('socket.io').listen(app);
- 
-// define port
-var port = 6080;
- 
-// make html, js & css files accessible
-var files = new static.Server('./public');
- 
-// serve files on request
-function handler(request, response) {
-    request.addListener('end', function() {
-        files.serve(request, response);
-    });
+var port = 8000;
+
+var files = new Static.Server('./public');
+
+function handler (request, response) {
+	request.on('end', function() {
+		files.serve(request, response);
+	}).resume();
 }
- 
-// listen for incoming connections from client
+
+// logs do socket
+io.set('log level', 1);
+
 io.sockets.on('connection', function (socket) {
- 
-  // start listening for coords
-  socket.on('send:coords', function (data) {
- 
-    // broadcast your coordinates to everyone except you
-    socket.broadcast.emit('load:coords', data);
-  });
+
+	socket.on('send:coords', function (data) {
+		socket.broadcast.emit('load:coords', data);
+	});
 });
- 
-// starts app on specified port
+
+// inicia o servidor na porta específica
 app.listen(port);
-console.log('Your server goes on localhost:' + port);
+console.log('servidor rodando em: localhost:' + port);

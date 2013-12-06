@@ -1,0 +1,12 @@
+App Geolocalozação 2013 ©
+Desenvolvido por: Paulo Vitor Francisco
+
+Para executar o código é necessaŕio instalar:
+ - nodejs
+ - módulo socket.io e node_static do nodejs
+ 
+Após a instalação, execute o arquivo servidor.js
+# node servidor.js
+
+Para acessar o aplicativo basta digitar no navegador:
+http://localhost:8000/index.html
