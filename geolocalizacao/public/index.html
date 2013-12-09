@@ -21,21 +21,25 @@
 			<div data-role="header" data-theme="b" id="cabecalho">
 				<h2>App Geolocalização</h2>
 			</div>
-			
+
 			<!-- Corpo do site-->
 			<div data-role="content" id="corpo">
 				<a href="./index.html"><img src="./imagens/logo.png" border="0" /></a>
+                <div id="buscar_cidade">
+				    <h3>Buscar Localização</h3>
+				    <form method="post" name="salvar_dados">
+					    <input type="text" id="cidade" value="" placeholder="Insira o nome da cidade" />
+					    <a data-role="button" data-transition="pop" href="#"  data-icon="plus" data-iconpos="right" id="btn_obter_cidade" data-inline="true" data-theme="b" >Buscar</a>
+	     			</form>
+	     		</div>
+	     		<br /><br />
 
-				<h3>Buscar Localização</h3>
-				<form name="salvar_dados">
-					<input type="text" id="cidade" value="" placeholder="Insira o nome da cidade" />
-					<a data-role="button" data-transition="pop" href="#"  data-icon="plus" data-iconpos="right" id="btn_obter_cidade" data-inline="true" data-theme="b" >Buscar</a>
-	 			</form><br /><br />
-
-				<h3>Obter sua Localização</h3>
-				<form name="salvar_dados">
-					<a data-role="button" data-transition="pop" href="#"  data-icon="plus" data-iconpos="right" id="btn_obter_geolocalizacao" data-inline="true" data-theme="b" >Obter Geolocalização</a>
-	 			</form>					
+                <div id="obter_geolocalizacao">
+				    <h3>Obter sua Localização</h3>
+				    <form name="salvar_dados">
+					    <a data-role="button" data-transition="pop" href="#"  data-icon="plus" data-iconpos="right" id="btn_obter_geolocalizacao" data-inline="true" data-theme="b" >Obter Geolocalização</a>
+	     			</form>
+	     	    </div>
 			</div>
 			
 			<!-- Rodapé -->
