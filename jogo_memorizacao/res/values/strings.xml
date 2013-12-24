@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jogo Memorização</string>
+    <string name="action_settings">Opções</string>
+    <string name="botao_reiniciar">Reiniciar</string>
+    <string name="botao_1">1</string>
+    <string name="botao_2">2</string>
+    <string name="botao_3">3</string>
+    <string name="botao_4">4</string>
+    <string name="botao_5">5</string>
+    <string name="botao_6">6</string>
+</resources>
