@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tela_principal"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:onClick="reiniciar"
         android:text="@string/botao_reiniciar" />
 
     <Button
@@ -31,7 +33,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/botao_reiniciar"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
         android:layout_toLeftOf="@+id/botao_reiniciar"
+        android:onClick="botao1"
         android:text="@string/botao_1" />
 
     <Button
@@ -42,6 +46,7 @@
         android:layout_alignBaseline="@+id/botao_5"
         android:layout_alignBottom="@+id/botao_5"
         android:layout_toRightOf="@+id/botao_reiniciar"
+        android:onClick="botao6"
         android:text="@string/botao_6" />
 
     <Button
@@ -52,6 +57,7 @@
         android:layout_alignBaseline="@+id/botao_1"
         android:layout_alignBottom="@+id/botao_1"
         android:layout_toRightOf="@+id/botao_reiniciar"
+        android:onClick="botao2"
         android:text="@string/botao_2" />
 
     <Button
@@ -62,6 +68,7 @@
         android:layout_alignBaseline="@+id/botao_3"
         android:layout_alignBottom="@+id/botao_3"
         android:layout_alignLeft="@+id/botao_6"
+        android:onClick="botao4"
         android:text="@string/botao_4" />
 
     <Button
@@ -71,6 +78,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/botao_1"
         android:layout_toLeftOf="@+id/botao_reiniciar"
+        android:layout_marginTop="5dp"
+        android:onClick="botao3"
         android:text="@string/botao_3" />
 
     <Button
@@ -80,6 +89,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/botao_3"
         android:layout_toLeftOf="@+id/botao_reiniciar"
+        android:layout_marginTop="5dp"
+        android:onClick="botao5"
         android:text="@string/botao_5" />
 
 </RelativeLayout>

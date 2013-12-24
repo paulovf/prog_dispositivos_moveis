@@ -24,21 +24,18 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080008;
-        public static final int barra_de_progresso=0x7f080000;
-        public static final int botao_1=0x7f080002;
-        public static final int botao_2=0x7f080005;
-        public static final int botao_3=0x7f080007;
-        public static final int botao_4=0x7f080006;
-        public static final int botao_5=0x7f080004;
-        public static final int botao_6=0x7f080003;
-        public static final int botao_reiniciar=0x7f080001;
+        public static final int barra_de_progresso=0x7f070001;
+        public static final int botao_1=0x7f070003;
+        public static final int botao_2=0x7f070006;
+        public static final int botao_3=0x7f070008;
+        public static final int botao_4=0x7f070007;
+        public static final int botao_5=0x7f070005;
+        public static final int botao_6=0x7f070004;
+        public static final int botao_reiniciar=0x7f070002;
+        public static final int tela_principal=0x7f070000;
     }
     public static final class layout {
         public static final int jogo_memorizacao=0x7f030000;
-    }
-    public static final class menu {
-        public static final int jogo_memorizacao=0x7f070000;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
