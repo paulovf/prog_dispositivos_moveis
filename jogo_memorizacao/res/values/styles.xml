@@ -45,4 +45,20 @@
     <style name="botao6" parent="botao">
         <item name="android:background">#464625</item>
     </style>
+    
+   	<style name="rotulo">
+        <item name="android:textColor">#000000</item>
+    </style>
+    
+    <style name="rotulo_large" parent="rotulo">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="rotulo_medium" parent="rotulo">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="rotulo_small" parent="rotulo">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>    
 </resources>

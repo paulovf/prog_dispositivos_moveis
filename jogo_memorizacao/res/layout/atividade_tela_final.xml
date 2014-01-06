@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tela_final"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".JogoMemorizacao" >
+
+    <TextView
+        android:id="@+id/texto_parabens"
+        style="@style/rotulo_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="@string/texto_parabens" />
+
+    <TextView
+        android:id="@+id/texto_descricao"
+        style="@style/rotulo_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/texto_descricao" />
+
+    <Button
+        android:id="@+id/botao_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="voltar"
+        android:text="@string/botao_voltar" />
+
+    <Button
+        android:id="@+id/botal_sobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/botao_voltar"
+        android:layout_alignBottom="@+id/botao_voltar"
+        android:layout_alignParentRight="true"
+        android:onClick="sobre"
+        android:text="@string/botao_sobre" />
+
+</RelativeLayout>
