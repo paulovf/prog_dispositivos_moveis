@@ -7,6 +7,8 @@
     <string name="botao_sobre">Sobre</string>
     <string name="texto_parabens">Parabéns!</string>
     <string name="texto_descricao">Você tem uma boa memória!</string>
+    <string name="texto_titulo">jogo Memorização</string>
+    <string name="texto_autor">Desenvolvidor por: Paulo Vitor francisco.</string>
     <string name="botao_1">1</string>
     <string name="botao_2">2</string>
     <string name="botao_3">3</string>
