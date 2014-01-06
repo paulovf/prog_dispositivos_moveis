@@ -1,39 +1,40 @@
 package br.ifet.pdm.jogo_memorizacao;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
+import android.util.Log;
 
 public class GerarSequencia {
-	private static final int AZUL = 1;
-	private static final int VERMELHO = 2;
-	private static final int VERDE = 3;
-	private static final int LARANJA = 4;
-	private static final int CINZA = 5;
-	private static final int MARRON = 6;
-	private int sequencia[] = {MARRON, CINZA, LARANJA, VERDE, VERMELHO, AZUL};
-	//private int sequencia[];
 	private int valorAtual = 0;
-	/*private Random gerador = new Random();
-	List<Integer> numeros = new ArrayList<Integer>();*/
+	List<Integer> sequencia = new ArrayList<Integer>();
 	
-	/*public GerarSequencia() {
+	public GerarSequencia() {
 		// TODO Auto-generated constructor stub
-		sequencia = geradorDeSequenica();
-	}*/
+		sequencia.add(1);
+		sequencia.add(2);
+		sequencia.add(3);
+		sequencia.add(4);
+		sequencia.add(5);
+		sequencia.add(6);
+		embaralhar();
+	}
 
 	public boolean verificaSequencia(int valor){
-		if(valor == sequencia[valorAtual]){
+		if(valor == sequencia.get(valorAtual)){
 			valorAtual += 1;
 			return true;
 		}
 		return false;
 	}
+
+	public void setValorAtual(int valorAtual) {
+		this.valorAtual = valorAtual;
+	}
 	
-	/*public int[] geradorDeSequenica(){
-		int[] sequencia = new int[6];
-		for(int i=0; i<6; i++){
-			sequencia[i] = gerador.nextInt(6);
-			Log.d("SEQUENCIA", String.valueOf(sequencia[i]));
-		}
-		return sequencia;
-	}*/
+	public void embaralhar(){
+		Collections.shuffle(sequencia);
+		Log.d("ERRO FATAL 111", sequencia.toString());
+	}
 }

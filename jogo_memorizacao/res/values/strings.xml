@@ -6,6 +6,7 @@
     <string name="botao_voltar">Voltar</string>
     <string name="botao_sobre">Sobre</string>
     <string name="texto_parabens">Parabéns!</string>
+    <string name="texto_progresso">Progresso</string>
     <string name="texto_descricao">Você tem uma boa memória!</string>
     <string name="texto_titulo">jogo Memorização</string>
     <string name="texto_autor">Desenvolvidor por: Paulo Vitor francisco.</string>

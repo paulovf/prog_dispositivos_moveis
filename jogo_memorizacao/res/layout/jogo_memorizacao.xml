@@ -95,4 +95,13 @@
         android:onClick="botao5"
         android:text="@string/botao_5" />
 
+    <TextView
+        android:id="@+id/texto_progresso"
+        style="@style/rotulo_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/barra_de_progresso"
+        android:layout_alignLeft="@+id/barra_de_progresso"
+        android:text="@string/texto_progresso" />
+
 </RelativeLayout>
