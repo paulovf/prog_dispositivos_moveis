@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PrevisaoTempo" >
+
+    <ProgressBar
+        android:id="@+id/atividade_previsao_tempo_barra_progresso_temperatura"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/atividade_previsao_tempo_titulo"
+        style="@style/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="@string/titulo" />
+
+    <TextView
+        android:id="@+id/atividade_previsao_tempo_rotulo_cidade"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/atividade_previsao_tempo_titulo"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_cidade" />
+
+    <EditText
+        android:id="@+id/atividade_previsao_tempo_campo_cidade"
+        android:inputType="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/atividade_previsao_tempo_rotulo_cidade"
+        android:layout_alignBottom="@+id/atividade_previsao_tempo_rotulo_cidade"
+        android:layout_alignRight="@+id/atividade_previsao_tempo_barra_progresso_temperatura"
+        android:layout_toRightOf="@+id/atividade_previsao_tempo_rotulo_cidade"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/atividade_previsao_tempo_rotulo_termometro"
+        style="@style/label_temperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/atividade_previsao_tempo_barra_progresso_temperatura"
+        android:layout_alignLeft="@+id/atividade_previsao_tempo_barra_progresso_temperatura"
+        android:text="@string/termometro"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/atividade_previsao_tempo_botao_buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/atividade_previsao_tempo_campo_cidade"
+        android:layout_below="@+id/atividade_previsao_tempo_campo_cidade"
+        android:layout_marginTop="46dp"
+        android:onClick="buscarCidade"
+        android:text="@string/botao_buscar" />
+
+    <TextView
+        android:id="@+id/atividade_previsao_tempo_campo_erro"
+        style="@style/erro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/atividade_previsao_tempo_campo_cidade"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/atividade_previsao_tempo_rotulo_cidade"
+        android:text="@string/campo_erro" />
+
+</RelativeLayout>

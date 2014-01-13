@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -16,5 +16,23 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    
+    <style name="titulo">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#0000ff</item>
+    </style>
+    
+    <style name="label">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+    
+    <style name="label_temperatura">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>        
+    </style>
+    
+    <style name="erro">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">#ff0000</item>
+    </style>    
 
 </resources>
