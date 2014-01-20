@@ -3,6 +3,7 @@ package br.com.pdm.previsao_tempo;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -41,6 +42,7 @@ public class PrevisaoTempo extends Activity {
 	}
 	
 	public void buscarCidade(View Component){
+
 		cidade = campoTextoCidade.getText().toString();
 		if(cidade != null || cidade.equals(" ")){
 			ObterTemperatura obterTemperatura = new ObterTemperatura();
@@ -49,6 +51,6 @@ public class PrevisaoTempo extends Activity {
 			campoTextoErro.setText("");
 		}else{
 			campoTextoErro.setText("Forneça um nome de cidade válido!");
-		}		
+		}
 	}
 }
