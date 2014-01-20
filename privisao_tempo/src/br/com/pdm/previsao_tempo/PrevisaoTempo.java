@@ -3,7 +3,6 @@ package br.com.pdm.previsao_tempo;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,8 +14,7 @@ public class PrevisaoTempo extends Activity {
 	private TextView campoTextoCidade;
 	private TextView campoTextoErro;
 	private String cidade;
-	
-	@Override
+		@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_previsao_tempo);
