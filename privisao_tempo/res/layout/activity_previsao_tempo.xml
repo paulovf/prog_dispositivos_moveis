@@ -8,15 +8,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".PrevisaoTempo" >
 
-    <ProgressBar
-        android:id="@+id/atividade_previsao_tempo_barra_progresso_temperatura"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true" />
-
     <TextView
         android:id="@+id/atividade_previsao_tempo_titulo"
         style="@style/titulo"
@@ -47,16 +38,6 @@
         android:layout_alignRight="@+id/atividade_previsao_tempo_barra_progresso_temperatura"
         android:layout_toRightOf="@+id/atividade_previsao_tempo_rotulo_cidade"
         android:ems="10" />
-
-    <TextView
-        android:id="@+id/atividade_previsao_tempo_rotulo_termometro"
-        style="@style/label_temperatura"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/atividade_previsao_tempo_barra_progresso_temperatura"
-        android:layout_alignLeft="@+id/atividade_previsao_tempo_barra_progresso_temperatura"
-        android:text="@string/termometro"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
         android:id="@+id/atividade_previsao_tempo_botao_buscar"

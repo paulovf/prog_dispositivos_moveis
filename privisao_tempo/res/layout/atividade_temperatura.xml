@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AtividadeTemperatura" >
+
+    <TextView
+        android:id="@+id/atividade_temperatura_titulo"
+        style="@style/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/atividade_temperatura_cidade"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/atividade_temperatura_titulo"
+        android:layout_marginTop="79dp"
+        android:text="@string/atividade_temperatura_label_temperatura" />
+
+    <TextView
+        android:id="@+id/atividade_temperatura_temperatura"
+        style="@style/label_temperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/atividade_temperatura_titulo"
+        android:layout_alignRight="@+id/atividade_temperatura_titulo"
+        android:layout_below="@+id/atividade_temperatura_cidade"
+        android:layout_marginTop="15dp"
+        android:text="" />
+
+	<ProgressBar
+	    android:id="@+id/atividade_previsao_tempo_barra_progresso_temperatura"
+	    style="?android:attr/progressBarStyleHorizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/atividade_temperatura_temperatura"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignRight="@+id/atividade_temperatura_temperatura"
+	    android:layout_marginBottom="50dp"
+	    android:max="100" />	
+
+	<TextView
+	    android:id="@+id/atividade_previsao_tempo_rotulo_termometro"
+	    style="@style/label_temperatura"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/atividade_previsao_tempo_barra_progresso_temperatura"
+	    android:layout_alignLeft="@+id/atividade_previsao_tempo_barra_progresso_temperatura"
+	    android:text="@string/termometro"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<Button
+	    android:id="@+id/botao_voltar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:onClick="voltar"
+	    android:text="@string/botao_voltar" />
+
+</RelativeLayout>

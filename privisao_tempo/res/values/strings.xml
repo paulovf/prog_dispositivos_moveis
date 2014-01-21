@@ -7,7 +7,11 @@
     <string name="title_activity_activity_versao">ActivityVersao</string>
     <string name="label_cidade">Forneça a cidade:</string>
     <string name="botao_buscar">Buscar</string>
-	<string name="termometro">Teemômetro</string>
-	<string name="campo_erro"></string>
-</resources>
+    <string name="termometro">Teemômetro</string>
+    <string name="botao_voltar">Voltar</string>
+    <string name="campo_erro"></string>
+    <string name="title_activity_atividade_temperatura">AtividadeTemperatura</string>
+    <string name="atividade_temperatura_label_temperatura">Temperatura</string>
+    <string name="hello_world">Hello world!</string>
 
+</resources>

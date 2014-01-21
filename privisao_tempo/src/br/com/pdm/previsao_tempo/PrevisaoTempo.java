@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class PrevisaoTempo extends Activity {
 
@@ -43,9 +42,8 @@ public class PrevisaoTempo extends Activity {
 
 		cidade = campoTextoCidade.getText().toString();
 		if(cidade != null || cidade.equals(" ")){
-			ObterTemperatura obterTemperatura = new ObterTemperatura();
+			ObterTemperatura obterTemperatura = new ObterTemperatura(this);
 			obterTemperatura.execute(cidade);
-			Toast.makeText(this, cidade, Toast.LENGTH_SHORT).show();
 			campoTextoErro.setText("");
 		}else{
 			campoTextoErro.setText("Forneça um nome de cidade válido!");
